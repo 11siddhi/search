@@ -13,6 +13,7 @@ body {
 
 /* nav-bar and footer */
 .nav-bar, .footer {
+    border: 2px solid navy;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -29,7 +30,7 @@ body {
 
 /* Shrinks the footer when width is less than 537px */
 @media (max-width: 537px) {
-    .footer {
+    .footer, .search-box-container {
         padding: 10px 0 10px 0;
         justify-content: center;
         height: fit-content;
@@ -66,7 +67,82 @@ a:hover {
 
 /* main body */
 .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* align-items: stretch; */
     border: 2px solid peru;
+}
+@media (max-width: 587px) {
+    .main {
+        padding: 0 10px;
+    }
+}
+.form {
+    padding: 20px;
+}
+
+/* Search Box */
+.search-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid darkblue;
+    width: 100%;
+    width: 584px;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+} 
+.search-box {
+    flex: 1;
+    background: #391b1b;
+    width: 100%; 
+    height: 46px;
+    padding: 0 47px;
+    margin: 0 auto;
+    border: 1px solid #dfe1e5; 
+    border-radius: 24px;   
+    box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
+    min-height: 44px;
+    min-width: 50px;
+} 
+.search-box:hover {
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: transparent;
+}
+
+.search-icon {
+    position: relative;
+    left: 100px;
+}
+
+/* Search buttons */
+.btn {
+    margin: 18px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.btn > * {
+    background-color: #f8f9fa;
+    color: #3c4043;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    line-height: 27px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;   
+}
+.btn > *:hover {
+    /* border: 1px solid darksalmon; */
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    /* transform: translateY(-2px); */
+    border: 1px solid #dadce0;
+    color: #202124;
 }
 
 
