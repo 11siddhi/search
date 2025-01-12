@@ -13,7 +13,7 @@ body {
 
 /* nav-bar and footer */
 .nav-bar, .footer {
-    border: 2px solid navy;
+    /* border: 2px solid navy; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -30,7 +30,7 @@ body {
 
 /* Shrinks the footer when width is less than 537px */
 @media (max-width: 537px) {
-    .footer, .search-box-container {
+    .footer {
         padding: 10px 0 10px 0;
         justify-content: center;
         height: fit-content;
@@ -67,48 +67,58 @@ a:hover {
 
 /* main body */
 .main {
+    /* margin: 10px; */
+    /* padding: 25px; */
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* align-items: stretch; */
-    border: 2px solid peru;
+    /* border: 2px solid peru; */
+    flex-wrap: wrap;
 }
-@media (max-width: 587px) {
-    .main {
-        padding: 0 10px;
-    }
+.google-logo {
+    /* border: 2px solid green; */
 }
 .form {
+    /* border: solid 2px slateblue; */
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100dvw;
 }
 
 /* Search Box */
 .search-box-container {
+    /* border: 2px solid darkblue; */
+    /* width: 584px; */
+    /* width: 100dvw; */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid darkblue;
-    width: 100%;
-    width: 584px;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 10px;
-    
 } 
 .search-box {
-    flex: 1;
-    background: #391b1b;
-    width: 100%; 
+    background: #fff;
     height: 46px;
-    padding: 0 47px;
-    margin: 0 auto;
+    padding: 0 47px;  /* For cursor*/
     border: 1px solid #dfe1e5; 
     border-radius: 24px;   
     box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
     min-height: 44px;
-    min-width: 50px;
+    width: 584px;
 } 
+@media (max-width: 630px) {
+    .search-box-container {
+        width: 100%;
+    }
+    .search-box {
+        width: 100vw;
+    }
+}
+
 .search-box:hover {
     background: #fff;
     box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
