@@ -48,8 +48,8 @@ a:hover {
 }
 
 /* nav-bar images */
-.menu-img, .lab-img {
-    width: 24px;
+.menu-img, .lab-img, .lens-icon, .mic-icon {
+    height: 24px;
 }
 .acc-img {
     width: 35px;
@@ -67,8 +67,6 @@ a:hover {
 
 /* main body */
 .main {
-    /* margin: 10px; */
-    /* padding: 25px; */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -77,13 +75,11 @@ a:hover {
     /* border: 2px solid peru; */
     flex-wrap: wrap;
 }
-.google-logo {
-    /* border: 2px solid green; */
-}
+
 .form {
     /* border: solid 2px slateblue; */
     padding: 20px;
-    display: flex;
+    display: flex;  
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -92,13 +88,12 @@ a:hover {
 
 /* Search Box */
 .search-box-container {
-    /* border: 2px solid darkblue; */
-    /* width: 584px; */
-    /* width: 100dvw; */
+    border: 2px solid darkblue;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px;
+    position: relative;
 } 
 .search-box {
     background: #fff;
@@ -126,8 +121,17 @@ a:hover {
 }
 
 .search-icon {
-    position: relative;
-    left: 100px;
+    position: absolute;
+    /* border: 2px solid plum; */
+    top: 23px;
+    left: 23.5px;
+    bottom: 23px;
+}
+.mic-icon, .lens-icon {
+    position: absolute;
+}
+.lens-icon {
+    position: absolute;
 }
 
 /* Search buttons */
