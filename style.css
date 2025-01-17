@@ -13,7 +13,6 @@ body {
 
 /* nav-bar and footer */
 .nav-bar, .footer {
-    /* border: 2px solid navy; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -72,23 +71,20 @@ a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* border: 2px solid peru; */
     flex-wrap: wrap;
 }
 
 .form {
-    /* border: solid 2px slateblue; */
     padding: 20px;
     display: flex;  
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    width: 100dvw;
+    width: 100dvw; /*check this out*/
 }
 
 /* Search Box */
 .search-box-container {
-    /* border: 2px solid darkblue; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -123,7 +119,6 @@ a:hover {
 
 .search-icon {
     position: absolute;
-    /* border: 2px solid plum; */
     top: 23px;
     left: 23.5px;
     bottom: 23px;
@@ -132,12 +127,10 @@ a:hover {
     position: absolute;
 }
 .lens-icon {
-    /* border: 2px solid skyblue; */
     top: 21px;
     right: 25px;
 }
 .mic-icon {
-    /* border: 2px solid salmon; */
     top: 23px;
     height: 20px;
     right:68px;
@@ -163,7 +156,6 @@ a:hover {
     height: 36px;   
 }
 .btn > *:hover {
-    /* border: 1px solid darksalmon; */
     cursor: pointer;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     /* transform: translateY(-2px); */

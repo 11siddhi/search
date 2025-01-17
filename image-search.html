@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Image Search</title>
+    <title>Google Images</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation bar -->
     <div class="nav-bar">
         <div class="left-nav">
             <a href="https://about.google.com/" rel="noopener noreferrer">About</a>
@@ -14,31 +15,35 @@
         </div>
         <div class="right-nav">
             <a href="index.html" rel="noopener noreferrer">Google Search</a>
-            <a href="advance.html" rel="noopener noreferrer">Advanced Search</a>
-            <a href="https://labs.google.com/search" rel="noopener noreferrer"><img class="lab-img" src="images/labs.png" alt=""></a>
-            <a href="#" rel="noopener noreferrer"><img class="menu-img" src="images/menu-logo.png" alt="menu-logo"></a>
-            <a href="#" rel="noopener noreferrer"><img class="acc-img" src="images/account-logo.png" alt="account-circle-logo"></a>
+            <a href="https://labs.google.com/search" rel="noopener noreferrer"><img class="lab-img" src="images/labs.png" alt="lab icon"></a>
+            <a href="#" rel="noopener noreferrer"><img class="menu-img" src="images/menu-logo.png" alt="menu icon"></a>
+            <a href="#" rel="noopener noreferrer"><img class="acc-img" src="images/account-logo.png" alt="accounts icon"></a>
         </div>
     </div>
+
+    <!-- Main body -->
     <div class="main">
+        <!-- Google images logo -->
         <div class="google-logo">
             <a href="index.html" rel="noopener noreferrer"><img src="images/Google-images-logo.svg" height="92" alt="Google logo"></a>
         </div>
-        <form class="form" action="https://www.google.com/search">
+        <!-- Search bar -->
+        <form class="form" action="https://www.google.com/search" method="GET">
             <div class="search-box-container">
-                <img class="search-icon" src="images/search-icon.svg" alt="search logo">
-                <!-- <textarea class="search-box" name="q" placeholder="Type your search here..." aria-expanded="true" aria-haspopup="true" maxlength="2048" rows="2"></textarea> -->
-                <input class="search-box" type="text" name="q" placeholder="Type your search here...">
+                <img class="search-icon" src="images/search-icon.svg" alt="search icon">
+                <input class="search-box" type="text" name="q" placeholder="Search">
                 <img class="mic-icon" src="images/Google_mic.svg.png" alt="Google mic icon">
                 <img class="lens-icon" src="images/Google_Lens_Icon.svg.png" alt="Google lens icon">
             </div>
+            <!-- Button -->
             <div class="btn">
                 <input type="hidden" name="tbm" value="isch">
                 <input type="submit" value="Search">
-                <!-- <input type="submit" name="btnI" value="I'm Feeling Lucky"> -->
             </div>
         </form>
     </div>
+
+    <!-- Footer -->
     <div class="footer">
         <div class="left-footer">
             <a href="https://ads.google.com/" rel="noopener noreferrer">Advertising</a>

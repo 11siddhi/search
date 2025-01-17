@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Search</title>
+    <link rel="stylesheet" href="advance-search.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="left-nav">
+            <a href="index.html"><img class="google-logo" src="images/google-logo.png" alt="google logo"></a>
+        </div>
+        <div class="right-nav">
+            <a href="index.html" rel="noopener noreferrer">Google Search</a>
+            <a href="https://labs.google.com/search" rel="noopener noreferrer"><img class="lab-img" src="images/labs.png" alt="lab icon"></a>
+            <a href="#" rel="noopener noreferrer"><img class="menu-img" src="images/menu-logo.png" alt="menu icon"></a>
+            <a href="#" rel="noopener noreferrer"><img class="acc-img" src="images/account-logo.png" alt="accounts icon"></a>
+        </div>
+    </div>
+
+    <!-- Title -->
+    <div>
+        <div class="title">
+            Advance Search
+        </div>
+        <div class="divider"></div>
+    </div>
+
+    <!-- Form -->
+    <div class="table">
+        <form class="form" action="https://www.google.com/search" method="GET" name="f">
+            <!-- Header -->
+            <div class="head-container row">
+                <div class="form-head left col">Find pages with...</div>
+                <div class="head-col-two col"></div>
+                <div class="form-head right col">To do this in the search box.</div>
+            </div>
+
+            <div class="form-container">
+                <!-- FIrst option -->
+                <div class="container row">
+                    <div class="option-text left col">all these words:</div>
+                    <div class="option col"><input class="op" type="text" name="as_q"></div>
+                    <div class="option-text right col">"Type the important words: "
+                        <span>tri-color rat terrier</span>
+                    </div>
+                </div>
+                <!-- Second option -->
+                <div class="container row">
+                    <div class="option-text left col">this exact word or phrase:</div>
+                    <div class="option col"><input class="op" type="text" name="as_epq"></div>
+                    <div class="option-text right col">"Put exact words in quotes: "
+                        <span>"rat terrier"</span>
+                    </div>
+                </div>
+                <!-- Third option -->
+                <div class="container row">
+                    <div class="option-text left col">any of these words:</div>
+                    <div class="option col"><input class="op" type="text" name="as_oq"></div>
+                    <div class="option-text right col">"Type "
+                        <span>OR</span>
+                        " between all the words you want: "
+                        <span>miniature OR standard</span>
+                    </div>
+                </div>
+                <!-- Fourth option -->
+                <div class="container row">
+                    <div class="option-text left  col">none of these words:</div>
+                    <div class="option col"><input class="op" type="text" name="as_eq"></div>
+                    <div class="option-text right col">"Put a minus sign just before words that you don't want: "
+                        <span>-rodent, -"Jack Russell"</span>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div class="container row">
+                    <div class="option-text left col"></div>
+                    <div class="col btn-container">
+                        <input class="btn" type="submit" value="Advance Search">
+                    </div>
+                    <div class="option-text right col right"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

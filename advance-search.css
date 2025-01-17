@@ -7,13 +7,12 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /*modified*/
+    justify-content: flex-start; /*check this out*/
     height: 100vh;
 }
 
 /* nav-bar and footer */
 .nav-bar {
-    /* border: 2px solid navy; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -47,41 +46,43 @@ a:hover {
     text-decoration: underline;
     text-decoration-color: #1f1f1f;
 }
-
-
-/* For advance search */
-.adv-google-logo {
+.google-logo {
     width: 74px;
 }
 
-.adv-title {
-    /* border: 2px solid firebrick; */
+/* Title */
+.title {
     font-weight: 400;
     color: #d93025;
     font-size: 20px;
     margin: 20px 35px 25px 45px;
 }
-.adv-divider {
+.divider {
     border: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
 }
 
-
-.adv-main {
-    margin: 40px 0 0 45px;
+/* Main form */
+.form {
+    margin: 25px 50px 0 45px;
 }
-.adv-form-head.right {
+
+/* Header of form */
+.form-head.left, .form-head.right {
     color: #333;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 25px;
-    width: 500px;
-    margin-left: 10px;
-    padding-left: 5px;
+}
+.form-head.left {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 25px;
 }
 
-.adv-option-text {
-    display: inline-block;
+/* Options of form */
+.option-text {
     color: #222;
     font-size: 13px;
     font-weight: 400;
@@ -89,46 +90,93 @@ a:hover {
     width: 167px;
     padding: 6.832px 0 ;
     margin-bottom: 12px;
-    /* height: 42px; */
 }
-.right {
-    font-size: 11px;
-    /* border: 2px solid seagreen; */
-    width: 500px;
-    margin-left: 10px;
-    padding-left: 5px;
-}
-
-
-.adv-option {
-    padding: 1px 8px;
-    border: 0.667px solid #222;
-    height: 30px;
-    flex: 1;
-}
-
-.adv-head-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.adv-form-head-l {
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 25px;
-    align-self: flex-start;
-}
-
-.container {
-    /* border: 2px solid skyblue; */
-    display: flex;
-    justify-content: space-between;
-}
-
-.adv-option-text > span {
+.option-text > span {
     font-family: monospace, Courier, sans-serif;
     color: #1f1f1f;
     font-size: 11px;
-
 }
+/* Input option */
+.op {
+    padding: 1px 8px;
+    border: 0.667px solid #222;
+    height: 30px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+/* Table */
+.table {
+    display: table;
+    width: 100%;
+}
+.row {
+    display: table-row;
+}
+.col {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Placing three columns */
+.right {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 11px;
+    height: 47px;
+    min-width: 455px;
+    padding-left: 15px;
+    padding-right: 100px;
+}
+.left {
+    display: table-cell;
+    vertical-align: middle;
+    height: 47px;
+    min-width: 167px;
+}
+.option, .head-col-two {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    min-width: 280px;
+    height: 47px;
+}
+
+/* Remove last column */
+@media (max-width: 1056px) {
+    .right {
+        display: none;
+    }
+    .op, .btn-container {
+        width: 43%;
+        min-width: 215px;
+    }
+}
+
+/* Button */
+.btn-container {
+    margin: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn {
+    background-color: #3079ed;
+    border: 0.667px solid #3079ed;
+    border-radius: 2px;
+    color: #ebebeb;
+    padding: 0 12px;
+    height: 30px;
+    min-width: 120px;
+    line-height: 100%;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #4c8cf4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    /* transform: translateY(-2px); */
+    border: 1px solid #4c8cf4;
+}
+
